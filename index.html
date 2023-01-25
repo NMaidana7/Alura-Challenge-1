@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header><img src="/imag/Logo.png" alt="logo" class="logo">
+    <h1 class="logo2">Alura y Oracle 2023</h1>
+    </header>
+   
+    
+    
+    <main>
+
+        <section>
+            <textarea class="textarea1" id="textoEncriptado" cols="30" rows="10"  placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" id="Enc">Encriptar</button>
+                <button class="btn-desencriptar" id="Des">Desencriptar</button>
+            </div>
+        </section>
+
+
+        <section>
+            <div>
+            <textarea class="textarea2" id="textoDesencriptado" cols="20" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+            </div>
+            <div>
+                <h1 class="caution" id="ingrese"> Ingrese el texto que desea encriptar o desencriptar </h1> 
+            </div>            
+            <div class="ponele">
+                <button class="copiar" id="copy">Copiar</button>
+            </div>
+        </section>      
+    </main>
+
+    <footer>
+        <img class="box" src="/imag/box.jpg">
+        <h1 class="pie">Creado por "Nicolás Agustín Maidana"</h1>
+    
+    </footer>
+
+    <script>
+
+    var btn = document.querySelector("#Enc");
+        btn.onclick = btnEncriptar;
+
+    var btn = document.querySelector("#Des");
+        btn.onclick = btnDesencriptar;
+
+    var btn = document.querySelector("#copy");
+        btn.onclick = copiar;
+    </script>
+    
+</body>
+</html>
